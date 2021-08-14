@@ -1,0 +1,40 @@
+button {
+    margin-left: 46%;
+    padding: 15px 49px;
+    font-size: 16px;
+    font-weight: 800;
+    color: aqua;
+    letter-spacing: 2px;
+    background: #111;
+    border: 8px solid red;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: 28px;
+    width: 18px;
+    height: 8px;
+    background: blue;
+    transition: .5s ease-in-out;
+}
+button::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    bottom: -8px;
+    width: 18px;
+    height: 8px;
+    background: blue;
+    transition: .5s ease-in-out;
+}
+button:hover::after{
+    right: 160px;
+}
+button:hover::before{
+    left: 160px;
+}

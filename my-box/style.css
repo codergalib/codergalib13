@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.my-box{
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+ul{
+    padding:0 ;
+    margin: 0;
+    position: relative;
+    width: 400px;
+    height: 400px;
+
+}
+ul::after {
+	content: "GBS";
+	position: absolute;
+	top: 370px;
+	left: 170px;
+	background: rgb(0, 0, 0);
+	width: 60px;
+	height: 60px;
+	color: white;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 50%;
+	font-weight: bold;
+	text-shadow: 0px 0 4px #00ffdb;
+    animation: animated2 4s infinite alternate;
+}
+@keyframes animated2{
+     0%{
+         font-size: 30px;
+         color: red;
+    }
+     50%{
+         font-size: 25px;
+         color: yellow;
+        }
+     100%{
+         font-size: 20px;
+         color: rgb(255, 255, 255);
+        }
+}
+ul li{
+    list-style: none;
+    border-radius: 50%;
+    border: 15px solid #000;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    animation: animated 3s infinite ;
+    transform: translate(-50%,-50%);
+}
+ul li:nth-child(1){
+    width: 60px;
+    height: 60px;
+    border-color: rgb(255, 0, 0);
+    animation-delay: .3s;
+    position: relative;
+    overflow: hidden;
+}
+
+ul li:nth-child(2){
+    width: 90px;
+    height: 90px;
+    border-color: rgb(255, 238, 0);
+    animation-delay: .5s;
+}
+ul li:nth-child(3){
+    width: 120px;
+    height: 120px;
+    border-color: rgb(30, 255, 0);
+    animation-delay: .7s;
+}
+ul li:nth-child(4){
+    width: 150px;
+    height: 150px;
+    border-color: rgb(0, 225, 255);
+    animation-delay: .9s;
+}
+ul li:nth-child(5){
+    width: 180px;
+    height: 180px;
+    border-color: rgb(47, 0, 255);
+    animation-delay: 1.1s;
+}
+ul li:nth-child(6){
+    width: 210px;
+    height: 210px;
+    border-color: rgb(255, 0, 179);
+    animation-delay: 1.3s;
+}
+ul li:nth-child(7){
+    width: 240px;
+    height: 240px;
+    border-color: rgb(0, 255, 128);
+    animation-delay: 1.5s;
+}
+
+
+@keyframes animated{
+    0%{
+        transform: translate(-50%,-50%) rotate(-0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.hello{
+    margin-top: 40px;
+}

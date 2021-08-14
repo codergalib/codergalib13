@@ -1,0 +1,73 @@
+/* TESTIMONIAL SECTION DESIGNE */
+.swiper-container{
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.swiper-wrapper{
+    display: flex;
+}
+.swiper-slide{
+    width: 30%;
+    min-width: 300px;
+    background: #424247;
+}
+.swiper-slide .card{
+    position: relative;
+    padding-top: 20px;
+}
+.swiper-slide .card .card_img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: -30px;
+    right: 10%;
+
+}
+.swiper-slide .card .card_img img{
+    max-width: 120%;
+}
+.swiper-slide .card .card_body{
+    /* margin-top: 50px; */
+    padding: 30px;
+}
+.swiper-slide .card .card_body .name{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px 0;
+    color: #fff;
+}
+.swiper-slide .card .card_body .profession{
+    font-size: 13px;
+    font-style: italic;
+    display: block;
+    color: #777;
+}
+.swiper-slide .card .card_body .info{
+    font-size: 13px;
+    padding: 7px 0;
+    color: #777;
+}
+.swiper-slide .card .card_body .rating{
+    display: block;
+    background: #222;
+    width: 110px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 50px;
+}
+.swiper-slide .card .card_body .rating span{
+    font-size: 10px;
+    margin: 0 1px;
+}
+.swiper-slide .card .card_body .rating .rated{
+    color: yellow;
+}
+.swiper-slide .card .card_body .rating .un_rated{
+    color: #777;
+    
+}
